@@ -10,7 +10,10 @@
     <h1>Things I need to do:</h1>
     {{ items }}
     {% for item in items %}
-    <tr></tr>
+    <tr>
+        <td> {{ item.name }}</td>
+        <td> {{item.done}} </td>
+    </tr>
     {% endfor %}
 </body>
 </html>
