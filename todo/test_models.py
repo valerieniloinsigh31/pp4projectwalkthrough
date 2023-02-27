@@ -9,6 +9,6 @@ class TestModels(TestCase):
         item = Item.objects.create(name = 'Test ToDo Item')
         self.assertFalse(item.done)
 
-    def test_item_strings_method_returns_name(self):
+    def test_item_string_method_returns_name(self):
         item = Item.objects.create(name = 'Test ToDo Item')
-        self.assetEqual(str(item), 'Test ToDo Item')
+        self.assertEqual(str(item), 'Test ToDo Item')

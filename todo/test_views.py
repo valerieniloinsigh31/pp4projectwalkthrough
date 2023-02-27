@@ -15,3 +15,5 @@ class TestDjango(TestCase):
 
     def test_this_thing_works4(self):
         self.assertEqual(1,4)
+
+    def test_can_edit_item():
